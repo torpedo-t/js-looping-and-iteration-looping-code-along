@@ -7,11 +7,24 @@
 //     } );
 //   } );
 
-const names = ["Lisa", "Kaitlin", "Jan"]
 
-function writeCards(names, "surprise") {
+
+function writeCards(names, event) {
+    let array = []
     for(let i = 0; i < names.length; i++) {
-        console.log(`Thank you, ${names[i]}, for the wonderful surprise gift!`);
+        array.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`);
     }
-    return names;
+    return array
 }
+
+function countDown(numbers) {
+    let i = 10 
+    while (i >= 0) {
+        console.log(`${numbers[i]}`);
+        i--
+    }    
+}
+
+// I expect this function to return a number for each iteration and incrementally reduce the number 10, 9, 8, 7...
+// Stop iteration once we get to 0
+// dynamically have 11 logs when starting at 10, while also having 5 logs when started at 4
