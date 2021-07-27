@@ -17,11 +17,10 @@ function writeCards(names, event) {
     return array
 }
 
-function countDown(numbers) {
-    let i = 10 
-    while (i >= 0) {
-        console.log(`${numbers[i]}`);
-        i--
+function countDown(number) { 
+    while (number >= 0) {
+        console.log(number);
+        number--
     }    
 }
 
